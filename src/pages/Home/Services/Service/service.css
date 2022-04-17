@@ -1,0 +1,9 @@
+.service-card {
+    border-radius: 50px 0;
+    border: 2px solid rgb(194, 164, 59);
+}
+
+.service-card img {
+    border-radius: 50px 0 50px 0;
+
+}

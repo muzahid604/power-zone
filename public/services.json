@@ -1,0 +1,30 @@
+[
+    {
+        "_id": "625bedd6a8599b7855dd81d4",
+        "prices": "$395.45",
+        "picture": "https://i.ibb.co/vdcdQ6Q/p-2-1.jpg",
+        "name": "SMALL GROUP PERSONAL TRAINING",
+        "about": "Our Small Group Personal Training is unlike anything you'll have experienced before. In micro training groups of just 6:1, all your workouts are customised, recorded and coached by an experienced personal trainer. The balance of the motivational group environment and 1-2-1 attention makes it the perfect mix to produce fast results, without the bounce back "
+    },
+    {
+        "_id": "625bedd684f193fc176e0471",
+        "prices": "$149.48",
+        "picture": "https://i.ibb.co/VYQqhks/banner-1-1.jpg",
+        "name": "1-2-1 PERSONAL TRAINING",
+        "about": "1-2-1 personal training is the ultimate investment in your health. You'll be working directly with your coach in our private studio, following a bespoke plan to ensure you hit your goals in record time. Whether you want to slim down, add muscle or anything in between, our personal training packages will get you there in a fun and sustainable way"
+    },
+    {
+        "_id": "625bedd6eca0d03bfd68c5c8",
+        "prices": "$377.94",
+        "picture": "https://i.ibb.co/nfNZZkC/nutrition-1.jpg",
+        "name": "NUTRITION COACHING",
+        "about": "We'll teach you how to take control of your health and weight, without relying on any specific diet or products, with our 1-2-1 nutrition coaching. You'll working alongside a qualified nutritionist to build a sustainable approach together, so you'll not only hit your physique goals, but be able to stay there without rigid diets or unrealistic restrictions"
+    },
+    {
+        "_id": "625bedd6962863f1f412bdfb",
+        "prices": "$159.74",
+        "picture": "https://i.ibb.co/QYcZC5T/p-4-1.jpg",
+        "name": "ONLINE TRAINING",
+        "about": "The Armoury's Online Coaching Packages have been created to take the guesswork out of getting in the best shape of your life. You'll be working 1-2-1 with your Personal Trainer through our Armoury Coaching app- where you'll get workouts designed specifically for you, progress monitored, regular check-ins and nutrition support for unrivalled results, anywhere in the world"
+    }
+]

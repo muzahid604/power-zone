@@ -5,7 +5,7 @@ const Header = () => {
     return (
         <Navbar bg="dark" expand="lg">
             <Container fluid>
-                <Navbar.Brand href="#">Navbar scroll</Navbar.Brand>
+                <Navbar.Brand href="#"><img className='ms-4' height={50} src="https://i.ibb.co/Wt5PXfx/Pump-House-removebg-preview-removebg-preview.png" alt="" /></Navbar.Brand>
                 <Navbar.Toggle aria-controls="navbarScroll" />
                 <Navbar.Collapse id="navbarScroll">
                     <Nav
@@ -21,8 +21,8 @@ const Header = () => {
                         </Nav.Link>
                     </Nav>
                     <Form className="d-flex ">
-                        <Button variant="outline-light mx-2 text-info fw-bold">LogIn</Button>
-                        <Button variant="outline-light text-info fw-bold">SignUp</Button>
+                        <Button variant="outline-light mx-2 fw-bold">LogIn</Button>
+                        <Button variant="outline-light  fw-bold">SignUp</Button>
                     </Form>
                 </Navbar.Collapse>
             </Container>
