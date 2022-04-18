@@ -1,9 +1,17 @@
+import { Button } from 'bootstrap';
+import { signOut } from 'firebase/auth';
 import React from 'react';
 import { Container, Form, Nav, Navbar } from 'react-bootstrap';
+import { useAuthState } from 'react-firebase-hooks/auth';
 import { Link } from 'react-router-dom';
+import auth from '../../../firebase.init';
 import './Header.css'
 
 const Header = () => {
+    const [user] = useAuthState(auth);
+    const logout = () => {
+        signOut(auth);
+    };
     return (
         <Navbar bg="dark" expand="lg">
             <Container fluid>
@@ -35,8 +43,9 @@ const Header = () => {
                         </Link>
                     </Nav>
                     <Form className="d-flex me-4">
-                        <Link to="/login" className=' m-2 text-dark p-2 btn-outline-danger fw-bold hover-color btn-warning rounded-pill'>LOGIN</Link>
-                        <Link to="/register" className='m-2 text-dark p-2 fw-bold btn-outline-danger btn-warning hover-color rounded-pill'>REGISTER</Link>
+                        {user ? <Link to='/login' onClick={logout} className=' m-2 text-dark p-2 btn-outline-light fw-bold hover-color btn-light rounded-pill'>LOG OUT</Link>
+                            : <Link to="/login" className=' m-2 text-dark p-2 btn-outline-light fw-bold hover-color btn-warning rounded-pill'>LOGIN</Link>}
+                        <Link to="/register" className='m-2 text-dark p-2 fw-bold btn-outline-light btn-warning hover-color rounded-pill'>REGISTER</Link>
                     </Form>
                 </Navbar.Collapse>
             </Container>
