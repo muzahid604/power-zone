@@ -4,15 +4,16 @@ import './service.css';
 
 
 const Service = ({ service }) => {
-    const { name, about, picture } = service
+    const { name, about, picture, prices } = service
     return (
 
-        <div className='service-card'>
+        <div className='service-card text-center'>
             <img className='w-100' src={picture} alt="" />
             <div className='m-3'>
                 <h3>{name}</h3>
                 <p>{about}</p>
-                <Button variant="outline-dark fw-bold">Start Now</Button>
+                <h5>{prices}</h5>
+                <Button variant="outline-dark rounded-pill fw-bold">Start Now</Button>
             </div>
         </div>
     );

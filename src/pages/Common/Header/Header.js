@@ -1,5 +1,6 @@
 import React from 'react';
 import { Button, Container, Form, Nav, Navbar } from 'react-bootstrap';
+import './Header.css'
 
 const Header = () => {
     return (
@@ -13,16 +14,25 @@ const Header = () => {
                         style={{ maxHeight: '100px' }}
                         navbarScroll
                     >
-                        <Nav.Link href="#action1" className='text-info fw-bold'>Home</Nav.Link>
-                        <Nav.Link href="#action2" className='text-info fw-bold'>Link</Nav.Link>
+                        <Nav.Link href="#action1" className=' mx-1 hover-color text-light fw-bold'>Home</Nav.Link>
+                        <Nav.Link href="#action2" className=' mx-1 hover-color text-light fw-bold'>ABOUT ME</Nav.Link>
 
-                        <Nav.Link href="#" disabled className='text-info fw-bold'>
-                            Link
+                        <Nav.Link href="#" className=' mx-1 hover-color text-light fw-bold'>
+                            SERVICES
+                        </Nav.Link>
+                        <Nav.Link href="#" className='text-light fw-bold mx-1 hover-color hover-color '>
+                            REVIEWS
+                        </Nav.Link>
+                        <Nav.Link href="#" className='text-light fw-bold mx-1 hover-color '>
+                            BLOG
+                        </Nav.Link>
+                        <Nav.Link href="#" className='text-light fw-bold mx-1 hover-color '>
+                            CONTACT ME
                         </Nav.Link>
                     </Nav>
-                    <Form className="d-flex ">
-                        <Button variant="outline-light mx-2 fw-bold">LogIn</Button>
-                        <Button variant="outline-light  fw-bold">SignUp</Button>
+                    <Form className="d-flex me-4">
+                        <Button variant="outline-light mx-4 fw-bold">LOGIN</Button>
+                        <Button variant="outline-light  fw-bold">REGISTER</Button>
                     </Form>
                 </Navbar.Collapse>
             </Container>
@@ -30,4 +40,4 @@ const Header = () => {
     );
 };
 
-export default Header; <h1>hello i am from header</h1>
+export default Header;
