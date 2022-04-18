@@ -1,11 +1,12 @@
 import React, { useRef } from 'react';
-import { Button, Form } from 'react-bootstrap';
+import { Button, Form, Spinner } from 'react-bootstrap';
 import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../../firebase.init';
+import SocialSign from '../SocialSign/SocialSign';
 import './Login.css';
-
 const Login = () => {
+
     const [
         signInWithEmailAndPassword,
         user,
@@ -21,6 +22,13 @@ const Login = () => {
         const email = emailRef.current.value;
         const password = passRef.current.value;
         signInWithEmailAndPassword(email, password)
+
+    }
+    if (loading) {
+        return <Spinner className='d-flex align-items-center justify-content-center' animation="grow" />
+    }
+    if (error) {
+        return <p>Error: {error.message}</p>
     }
     let from = location.state?.from?.pathname || "/";
     if (user) {
@@ -33,6 +41,7 @@ const Login = () => {
     }
     return (
         <div >
+
             <h1 className='text-center m-3'>Log In</h1>
             <Form onSubmit={handleSubmit} className="w-50 mx-auto">
                 <Form.Group className="mb-3" controlId="formBasicEmail">
@@ -44,17 +53,15 @@ const Login = () => {
                     <Form.Label>Password</Form.Label>
                     <Form.Control ref={passRef} required type="password" placeholder="Password" />
                 </Form.Group>
-                <Button variant="text-light px-5 btn-outline-dark fw-bold hover-color btn-light rounded-pill" type="submit">
-                    Submit
-                </Button>
+                <div className='w-50 text-center mx-auto'>
+                    <Button variant="text-light px-5 w-100 btn-outline-dark fw-bold hover-color btn-light rounded-pill" type="submit">
+                        Log in
+                    </Button>
+                </div>
                 <p className='p-2'>New to Power Zone? <Link to='/register' className=' text-danger' onClick={navigateRegister}>Please Register</Link></p>
             </Form>
             <hr className='w-50 mx-auto' />
-            <div className='w-50 text-center mx-auto d-flex'>
-                <Button variant="text-light px-5 btn-outline-dark fw-bold hover-color btn-light rounded-pill" type="submit">
-                    SignIn with Google
-                </Button>
-            </div>
+            <SocialSign></SocialSign>
         </div>
     );
 };
