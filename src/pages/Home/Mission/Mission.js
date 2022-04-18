@@ -2,7 +2,7 @@ import React from 'react';
 import './Mission.css';
 const Mission = () => {
     return (
-        <div className='d-flex mt-5'>
+        <div className='mission mt-5'>
             <img className='mission-img' src="https://i.ibb.co/Bw4TmZx/banner-3-1.jpg" alt="" />
             <div className='m-5'>
                 <h1>My Mission</h1>
