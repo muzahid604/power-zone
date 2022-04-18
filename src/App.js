@@ -8,6 +8,7 @@ import Home from './pages/Home/Home/Home';
 import Mission from './pages/Home/Mission/Mission';
 import Services from './pages/Home/Services/Services/Services';
 import Pricing from './pages/Pricing/Pricing';
+import Login from './pages/Sign/Login/Login';
 
 function App() {
   return (
@@ -21,7 +22,7 @@ function App() {
         <Route path='/blogs' element={<Blogs></Blogs>}></Route>
         <Route path='/contact' element={<Contact></Contact>}></Route>
         <Route path='/mission' element={<Mission></Mission>}></Route>
-
+        <Route path='/login' element={<Login></Login>}></Route>
       </Routes>
 
     </div >

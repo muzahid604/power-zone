@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, Container, Form, Nav, Navbar } from 'react-bootstrap';
+import { Container, Form, Nav, Navbar } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import './Header.css'
 
@@ -15,28 +15,28 @@ const Header = () => {
                         style={{ maxHeight: '100px' }}
                         navbarScroll
                     >
-                        <Link to="/" className=' mx-1 hover-color text-light fw-bold'>HOME</Link>
-                        <Link to="/about" className=' mx-1 hover-color text-light fw-bold'>ABOUT</Link>
+                        <Link to="/" className=' mx-1 hover-color text-warning fw-bold'>HOME</Link>
+                        <Link to="/about" className=' mx-1 hover-color text-warning fw-bold'>ABOUT</Link>
 
-                        <Link to="/services" className=' mx-1 hover-color text-light fw-bold'>
+                        <Link to="/services" className=' mx-1 hover-color text-warning fw-bold'>
                             SERVICES
                         </Link>
-                        <Link to="/pricing" className='text-light fw-bold mx-1 hover-color hover-color '>
+                        <Link to="/pricing" className='text-warning fw-bold mx-1 hover-color hover-color '>
                             PRICING
                         </Link>
-                        <Link to="/blogs" className='text-light fw-bold mx-1 hover-color '>
+                        <Link to="/blogs" className='text-warning fw-bold mx-1 hover-color '>
                             BLOGS
                         </Link>
-                        <Link to="/contact" className='text-light fw-bold mx-1 hover-color '>
+                        <Link to="/contact" className='text-warning fw-bold mx-1 hover-color '>
                             CONTACT
                         </Link>
-                        <Link to="/mission" className='text-light fw-bold mx-1 hover-color '>
+                        <Link to="/mission" className='text-warning fw-bold mx-1 hover-color '>
                             MISSION
                         </Link>
                     </Nav>
                     <Form className="d-flex me-4">
-                        <Button variant="outline-light mx-4 fw-bold rounded-pill">LOGIN</Button>
-                        <Button variant="outline-light  fw-bold rounded-pill">REGISTER</Button>
+                        <Link to="/login" className=' m-2 text-dark p-2 btn-outline-danger fw-bold hover-color btn-warning rounded-pill'>LOGIN</Link>
+                        <Link to="/register" className='m-2 text-dark p-2 fw-bold btn-outline-danger btn-warning hover-color rounded-pill'>REGISTER</Link>
                     </Form>
                 </Navbar.Collapse>
             </Container>
