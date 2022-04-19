@@ -25,10 +25,16 @@ const Login = () => {
 
     }
     if (loading) {
-        return <Spinner className='d-flex align-items-center justify-content-center' animation="grow" />
+        return <div className='d-flex align-items-center justify-content-center mx-auto'>
+            <Spinner className='d-flex align-items-center justify-content-center' animation="grow" />
+            <h4 className='fs-1 text-success' >Loading...</h4>
+        </div>
     }
     if (error) {
-        return <p>Error: {error.message}</p>
+        return <div className='d-flex align-items-center justify-content-center mx-auto'>
+            <Spinner className='d-flex align-items-center justify-content-center' animation="grow" />
+            <h4 className='fs-1 text-success' >OOPS {error.message}</h4>
+        </div>
     }
     let from = location.state?.from?.pathname || "/";
     if (user) {

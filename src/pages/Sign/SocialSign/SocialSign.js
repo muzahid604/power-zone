@@ -19,7 +19,14 @@ const SocialSign = () => {
         );
     }
     if (loading) {
-        return <Spinner animation="grow"></Spinner>;
+        return <div className='d-flex align-items-center justify-content-center mx-auto'><Spinner className='d-flex align-items-center justify-content-center' animation="grow" />
+            <h4 className='fs-1 text-success' >Loading...</h4>
+        </div>
+    }
+    if (error) {
+        return <div className='d-flex align-items-center justify-content-center mx-auto'><Spinner className='d-flex align-items-center justify-content-center' animation="grow" />
+            <h4 className='fs-1 text-success' >OOPS {error.message}</h4>
+        </div>
     }
     return (
         <div className='w-50 text-center mx-auto'>
