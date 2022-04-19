@@ -7,7 +7,9 @@ const About = () => {
             <img className='mission-img' src="https://i.ibb.co/KW0X05D/S5027-copy-removebg-preview-1.png" alt="" />
             <div className='m-5'>
                 <h1>JUBAER AL MUZAHID</h1>
-                <p className='fs-5'>I love helping people stick with something that they not only get great results from but that they enjoy too. Nowadays, people know that their physical and mental health is worth investing in, recognising the benefits of outsourcing all the management of their health and fitness to a professional.</p>
+                <p className='fs-5'>
+                    I want to do my best to be the most successful and happy person in the world. I am very ambitious when it comes to my life goals, the more challenging the obstacles in life, the more excited and persevering I become. Therefore, the few goals I want to achieve in my life are quite complex. I have three main purposes in life
+                    I want to be a software engineer, which is one of my three main goals in life. To be the most successful person at work. To be successful in this world and the next.</p>
                 <Button className="btn btn-outline-dark mt-1 rounded-pill fw-bold">CONTRACT ME
                 </Button>
             </div>
