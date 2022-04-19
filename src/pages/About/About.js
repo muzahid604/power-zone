@@ -4,7 +4,7 @@ import './About.css';
 const About = () => {
     return (
         <div className='mission mt-5'>
-            <img className='mission-img' src="https://i.ibb.co/KW0X05D/S5027-copy-removebg-preview-1.png" alt="" />
+            <img className='my-img' src="https://i.ibb.co/KW0X05D/S5027-copy-removebg-preview-1.png" alt="" />
             <div className='m-5'>
                 <h1>JUBAER AL MUZAHID</h1>
                 <p className='fs-5'>

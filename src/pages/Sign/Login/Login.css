@@ -1,6 +1,5 @@
-.submit-btn {
-    display: flex;
-
-    margin: 300px;
-    align-items: center;
+@media only screen and (max-width: 600px) {
+    .btn-md-size {
+        width: 100%;
+    }
 }

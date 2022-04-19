@@ -1,4 +1,5 @@
 import React, { useRef } from 'react';
+import './Login.css'
 import { Button, Form, Spinner } from 'react-bootstrap';
 import { useSendPasswordResetEmail, useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
@@ -68,13 +69,13 @@ const Login = () => {
                     <Form.Label>Password</Form.Label>
                     <Form.Control ref={passRef} required type="password" placeholder="Password" />
                 </Form.Group>
-                <div className='w-50 text-center mx-auto'>
-                    <Button variant="text-light px-5 w-100 btn-outline-dark fw-bold hover-color btn-light rounded-pill" type="submit">
+                <div className='w-50 w-sm-100 text-center mx-auto'>
+                    <Button variant="btn-md-size  text-success px-5 w-100 btn-outline-dark fw-bold hover-color btn-light rounded-pill" type="submit">
                         Log in
                     </Button>
                 </div>
                 <p className='p-2'>New to Power Zone? <Link to='/register' className='text-danger' onClick={navigateRegister}>Please Register</Link></p>
-                <p className='p-2'>forget password? <Button className='px-0 w-25  btn-danger' onClick={resetPassword}>Reset Password </Button></p>
+                <p className='p-2'>forget password? <Button className='px-0 btn-md-size w-25 w  btn-danger' onClick={resetPassword}>Reset Password </Button></p>
             </Form>
 
             <hr className='w-50 mx-auto' />
