@@ -27,7 +27,9 @@ function App() {
         }></Route>
         <Route path='/blogs' element={<Blogs></Blogs>}></Route>
         <Route path='/contact' element={<Contact></Contact>}></Route>
-        <Route path='/mission' element={<Mission></Mission>}></Route>
+        <Route path='/mission' element={
+          <RequireAuth><Mission></Mission></RequireAuth>
+        }></Route>
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/register' element={<Register></Register>}></Route>
         <Route path='*' element={<NotFound></NotFound>}></Route>

@@ -73,8 +73,8 @@ const Login = () => {
                         Log in
                     </Button>
                 </div>
-                <p className='p-2'>New to Power Zone? <Link to='/register' className=' text-danger' onClick={navigateRegister}>Please Register</Link></p>
-                <p className='p-2'>forget password? <Button className=' text-danger' onClick={resetPassword}>Reset Password </Button></p>
+                <p className='p-2'>New to Power Zone? <Link to='/register' className='text-danger' onClick={navigateRegister}>Please Register</Link></p>
+                <p className='p-2'>forget password? <Button className='px-0 w-25  btn-danger' onClick={resetPassword}>Reset Password </Button></p>
             </Form>
 
             <hr className='w-50 mx-auto' />
