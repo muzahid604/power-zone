@@ -30,7 +30,7 @@ const Footer = () => {
                     CONTACT
                 </Link>
             </div>
-            <p className='text-light text-center fs-5'>Web design by J A Muzahid</p>
+            <p className='text-light text-center fs-5'>Copyright © 2022 J A Muzahid</p>
         </div>
     );
 };
