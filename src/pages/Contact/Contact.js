@@ -3,7 +3,8 @@ import './Contact.css'
 const Contact = () => {
     return (
         <div>
-            <h2>This is contact</h2>
+            <h2 className='text-center m-5'>This is contact information</h2>
+
         </div>
     );
 };
