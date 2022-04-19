@@ -29,8 +29,7 @@ const Header = () => {
                             SERVICES
                         </Link>
                         <Link to="/pricing" className='text-warning fw-bold mx-1 hover-color hover-color '>
-                            PRICING
-                        </Link>
+                            CHECKOUT                        </Link>
                         <Link to="/blogs" className='text-warning fw-bold mx-1 hover-color '>
                             BLOGS
                         </Link>
