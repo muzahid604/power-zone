@@ -3,6 +3,7 @@ import './App.css';
 import About from './pages/About/About';
 import Blogs from './pages/Blogs/Blogs';
 import Header from './pages/Common/Header/Header';
+import NotFound from './pages/Common/NotFound/NotFound';
 import Contact from './pages/Contact/Contact';
 import Home from './pages/Home/Home/Home';
 import Mission from './pages/Home/Mission/Mission';
@@ -29,6 +30,7 @@ function App() {
         <Route path='/mission' element={<Mission></Mission>}></Route>
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/register' element={<Register></Register>}></Route>
+        <Route path='*' element={<NotFound></NotFound>}></Route>
       </Routes>
 
     </div >
