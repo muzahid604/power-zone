@@ -70,12 +70,12 @@ const Login = () => {
                     <Form.Control ref={passRef} required type="password" placeholder="Password" />
                 </Form.Group>
                 <div className='w-50 w-sm-100 text-center mx-auto'>
-                    <Button variant="btn-md-size  text-success px-5 w-100 btn-outline-dark fw-bold hover-color btn-light rounded-pill" type="submit">
+                    <Button variant="text-light px-4 btn-outline-dark fw-bold hover-color btn-light rounded-pill m-2 w-50" type="submit">
                         Log in
                     </Button>
                 </div>
                 <p className='p-2'>New to Power Zone? <Link to='/register' className='text-danger' onClick={navigateRegister}>Please Register</Link></p>
-                <p className='p-2'>forget password? <Button className='px-0 btn-md-size w-25 w  btn-danger' onClick={resetPassword}>Reset Password </Button></p>
+                <p className=''><Button className='px-0 btn-md-size w-25 w  btn-danger' onClick={resetPassword}>Reset Password </Button></p>
             </Form>
 
             <hr className='w-50 mx-auto' />
