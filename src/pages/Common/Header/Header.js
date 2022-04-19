@@ -1,4 +1,3 @@
-import { Button } from 'bootstrap';
 import { signOut } from 'firebase/auth';
 import React from 'react';
 import { Container, Form, Nav, Navbar } from 'react-bootstrap';

@@ -12,6 +12,7 @@ import Pricing from './pages/Pricing/Pricing';
 import Login from './pages/Sign/Login/Login';
 import Register from './pages/Sign/Register/Register';
 import RequireAuth from './pages/Sign/RequireAuth/RequireAuth';
+import Footer from './pages/Home/Footer/Footer';
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
         <Route path='/register' element={<Register></Register>}></Route>
         <Route path='*' element={<NotFound></NotFound>}></Route>
       </Routes>
+      <Footer></Footer>
 
     </div >
   );
